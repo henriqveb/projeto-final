@@ -2,15 +2,14 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "fila.h"
-#include "pilha.h"
+#include "libs/fila.h"
+#include "libs/pilha.h"
 
 // Função para resolver problemas de leitura do scanf e evitar seleção de opções erradas
 void limpar_entrada()
 {
     int c;
-    while ((c = getchar()) != '\n' && c != EOF)
-        ;
+    while ((c = getchar()) != '\n' && c != EOF);
 }
 
 void exibir_menu()
